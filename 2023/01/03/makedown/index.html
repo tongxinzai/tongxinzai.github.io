@@ -16,7 +16,7 @@
 <meta property="og:description" content="Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-03T12:23:16.000Z">
-<meta property="article:modified_time" content="2023-01-03T18:53:37.300Z">
+<meta property="article:modified_time" content="2023-01-04T07:03:50.749Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -278,7 +278,19 @@
 </tbody></table>
 <h2 id="在列表中嵌套其他元素"><a href="#在列表中嵌套其他元素" class="headerlink" title="在列表中嵌套其他元素"></a>在列表中嵌套其他元素</h2><p>要在保留列表连续性的同时在列表中添加另一种元素，请将该元素缩进四个空格或一个制表符。其中代码块通常采用四个空格或一个制表符缩进。当它们被放在列表中时，请将它们缩进八个空格或两个制表符。</p>
 <h1 id="Markdown-代码语法"><a href="#Markdown-代码语法" class="headerlink" title="Markdown 代码语法"></a>Markdown 代码语法</h1><p>要将单词或短语表示为代码，请将其包裹在反引号 (<code>) 中。   |        makedown语法               |         预览效果              | | :----: | :----: | |At the command prompt, type \</code>nano`| At the command prompt, type <code>nano</code>|</p>
-<h2 id="转义反引号"><a href="#转义反引号" class="headerlink" title="转义反引号"></a>转义反引号</h2><p>如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(<code>)中。 |        makedown语法               |         预览效果              | | :----: | :----: | |\`\`At the command prompt, type \`nano\`.\`\`| </code>At the command prompt, type <code>nano</code>.``|</p>
+<h2 id="转义反引号"><a href="#转义反引号" class="headerlink" title="转义反引号"></a>转义反引号</h2><p>如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(``)中。</p>
+<table>
+<thead>
+<tr>
+<th align="center">makedown语法</th>
+<th align="center">预览效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">``At the command prompt, type `nano`.``</td>
+<td align="center"><code>At the command prompt, type `nano`.</code></td>
+</tr>
+</tbody></table>
 <h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。</p>
 <pre><code>&lt;html&gt;
   &lt;head&gt;
@@ -302,8 +314,8 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">&lt;<a target="_blank" rel="noopener" href="https://markdown.com.cn&gt;/">https://markdown.com.cn&gt;</a><br>&lt;<a href="mailto:&#x66;&#x61;&#107;&#x65;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;">&#x66;&#x61;&#107;&#x65;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a>&gt;</td>
-<td align="center"><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:&#x66;&#x61;&#x6b;&#101;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;">&#x66;&#x61;&#x6b;&#101;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;</a></td>
+<td align="center">&lt;<a target="_blank" rel="noopener" href="https://markdown.com.cn&gt;/">https://markdown.com.cn&gt;</a><br>&lt;<a href="mailto:&#102;&#97;&#x6b;&#101;&#64;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#109;">&#102;&#97;&#x6b;&#101;&#64;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#109;</a>&gt;</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:&#x66;&#97;&#x6b;&#101;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;">&#x66;&#97;&#x6b;&#101;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;</a></td>
 </tr>
 </tbody></table>
 <h2 id="带格式化的链接"><a href="#带格式化的链接" class="headerlink" title="带格式化的链接"></a>带格式化的链接</h2><p>强调 链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。</p>
@@ -495,10 +507,10 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2023 John Doe
+    		<!-- &copy; 2023 John Doe -->
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		< 感谢您的光临 
       	</div>
     </div>
   </div>
